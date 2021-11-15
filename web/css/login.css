@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body
+{
+  background: url(images/Ha-3.jpg);
+}
+
+h5
+{
+  font-weight: 400;
+}
+
+
+.container
+{
+  margin-top: 80px;
+  width: 400px;
+  height: 650px;
+}
+
+.tabs .indicator
+{
+  background-color: rgb(224, 242, 241);
+  height: 60px;
+  opacity: 0.3;
+}
+
+.form-container
+{
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.confirmation-tabs-btn
+{
+  position: absolute;
+}
+div.tabs-content.carousel.carousel-slider {
+  height: 600px !important;
+}

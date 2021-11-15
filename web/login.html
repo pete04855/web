@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/login.css">
+	<style type="text/css">
+		nav {
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+</head>
+
+<body style="background: url(image/9.jpg);">
+
+
+	<div class="container white z-depth-2" style="width: 600px;">
+		<ul class="tabs teal">
+			<li class="tab col s3"><a class="white-text active" href="#login">Login</a></li>
+			<li class="tab col s3"><a class="white-text" href="#register">Register</a></li>
+		</ul>
+		<div id="login" class="col s12">
+			<form action="" method="post">
+				<div class="form-container">
+					<h3>ยินดีตอนรับ</h3>
+					<div class="row">
+
+						<div class="input-field col s12">
+							<input id="username" class="materialize-textarea" type="text" name="username">
+							<label for="username">Username</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="password" class="materialize-textarea" type="password" name="password">
+							<label for="password">Password</label>
+						</div>
+					</div>
+
+					<a href="home.html" class="button btn waves-effect waves-light" type="submit" name="action">Login
+						<i class="material-icons right">send</i>
+					</a>
+				</div>
+
+			</form>
+		</div>
+		<div id="register" class="col s12">
+			<form action="Reg" method="post">
+				<div class="form-container">
+					<h3>Welcome</h3>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="username" class="materialize-textarea" type="text" name="username">
+							<label for="username">Username</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="password" class="materialize-textarea" type="password" name="password">
+							<label for="password">Password</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="email" class="materialize-textarea" type="email" name="email">
+							<label for="email">email</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="tell" class="materialize-textarea" type="tel" name="tell">
+							<label for="tell">tell</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="text" class="materialize-textarea" type="text" name="text">
+							<label for="text">address</label>
+						</div>
+
+					</div>
+					<a href="home.html" class="button btn waves-effect waves-light" type="submit" name="action">Submit
+						<i class="material-icons right">send</i>
+					</a>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://kit.fontawesome.com/dab76384af.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script type="text/javascript">
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const variableName = document.querySelector('.tabs');
+			M.Tabs.init(variableName, {
+				swipeable: true,
+				duration: 300
+			});
+		})
+		$(document).ready(function () {
+			$('.parallax').parallax();
+			$('.materialboxed').materialbox();
+			$('.sidenav').sidenav();
+		});
+	</script>
+</body>
+
+</html>
